@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+
+    .bgimg {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('./HundFoto1_600x450retusche.jpg');
+      min-height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar with image -->
+  <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+    <div class="bgimg"></div>
+  </nav>
+
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
+      style="padding:0 12px;">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center">
+      <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Eindrücke</a>
+      <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Allgemeines</a>
+      <a href="#offer" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Kursangebote</a>
+      <a href="#times" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Kurs- und
+        Trainingszeiten</a>
+      <a href="#prices" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Preise</a>
+      <a href="#ref" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Referenzen</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Kontakt</a>
+      <a href="#journy" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Anfahrt</a>
+      <a href="#agb" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">AGB</a>
+      <a href="#impressum" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Impressum</a>
+      <a href="#datenschutz" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
+        onclick="closeNav()">Datenschutz</a>
+
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="w3-main w3-padding-large" style="margin-left:40%">
+
+    <!-- Menu icon to open sidebar -->
+    <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+      onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+    <!-- Header -->
+    <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+      <img src="./logo.png" style="width:100%">
+
+      <img src="./HundFoto1_600x450retusche.jpg" class="w3-image w3-hide-large w3-hide-small w3-round"
+        style="display:block;width:60%;margin:auto;">
+      <img src="./HundFoto1_600x450retusche.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000"
+        height="1333">
+    </header>
+
+    <!-- Portfolio Section -->
+    <div class="w3-padding-32 w3-content" id="portfolio">
+      <h2 class="w3-text-grey">Eindrücke</h2>
+      <hr class="w3-opacity">
+
+      <!-- Grid for photos -->
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half">
+          <img src="./hunde.jpg" style="width:100%">
+          <img src="./Platz.jpg" style="width:100%">
+          <img src="./suchen.jpg" style="width:100%">
+        </div>
+
+        <div class="w3-half">
+          <img src="./fressnapf_wage.jpg" style="width:100%">
+          <img src="./palette.jpg" style="width:100%">
+        </div>
+        <!-- End photo grid -->
+      </div>
+      <div class="w3-content w3-justify w3-center w3-large">
+        Mehr Eindrücke auf
+        <a href="https://www.facebook.com/HundeschuleDogs">
+          <i class="fa fa-facebook-official w3-hover-opacity w3-xlarge"></i> Facebook</a>
+      </div>
+      <!-- End Portfolio Section -->
+    </div>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+      <h2>Allgemeines</h2>
+      <hr class="w3-opacity">
+      <div>
+        <p>
+        <h5>Erziehung</h5>
+
+        Für den Hund ist es wichtig sich an klare und verlässliche Regeln halten zu können. Es bedeutet für ihn
+        Sicherheit. Ein kalkulierbarer Hundehalter schafft für den Hund vertrauen. Das braucht er, um die ihm gestellten
+        Anforderungen voller Selbstvertrauen meistern zu können.
+        <br>
+        Hunde verstehen zwar unsere verbale Sprache nicht, dennoch können sie die Bedeutung unserer Worte, unsere Gestik
+        und Mimik entschlüsseln. Der Mensch braucht Wissen über Wesen und Verhalten des Hundes, Einfühlungsvermögen,
+        Geduld und Konsequenz.
+
+        <h5>Einzelunterricht</h5>
+
+        Einzelunterricht ist immer dann angebracht wenn gravierende Probleme bestehen, der Hund in keine Gruppe
+        integriert werden kann oder Sie lieber in Ihrem gewohnten Umfeld trainieren möchten. Nicht jeder mag den
+        Hundeplatz-Unterricht.
+        <br><br>
+        Gern komme ich zu Ihnen nach Hause.
+
+        <h5>Kasseler Hundeschule</h5>
+
+        Unser Hundeplatz in Vellmar ist durch seine Lage, wie in der Anfahrt beschrieben, leicht zu erreichen. Stadtnah
+        bei Kassel gelegen, ist man schnell im Grünen und hat die entsprechenden Möglichkeiten mit den Hunden zu
+        trainieren und dabei Spaß zu haben.
+
+        <h5>Beratung</h5>
+
+        Ich berate Sie gern über die Rasse ihres Hundes und begleite Sie bei der Auswahl ihres Vierbeiners.
+        <br>
+        Beratung zu allen Themen rund um den Hund.
+
+        <h5>Wichtiges</h5>
+
+        Wenn der Hund nicht mehr Hund sein darf – sondern z.B. als Kindersatz gehalten wird kann er zum Familientyrann
+        werden oder im schlimmsten Fall überängstlich oder gar aggressiv gegen sie und andere. Verhaltensauffälligkeiten
+        können nie mal eben so aus der Welt geschaffen werden. Denn meist wurde das unerwünschte Verhalten bereits
+        jahrelang geduldet und durch den Hund so praktiziert.
+        Der Umgang und das Beseitigen von unerwünschtem Verhalten erfordert von Mensch und Hund vor allen Dingen Zeit
+        und Geduld
+        <br><br>
+        Hunde sind glücklich wenn sie als Hunde akzeptiert werden und auch so leben dürfen.
+        <br>
+        Hundehalter wünschen sich einen freudig – folgsamen und liebenswerten Hund, den man überall mit hinnehmen kann,
+        sei es um Freunde, Bekannte oder Verwandte zu besuchen oder aber um nach einem ausgedehnten Spaziergang in das
+        Café oder das Bistro an der Ecke einzukehren.
+        <br><br>
+        Mein persönliches Ziel ist es im Einzeltraining und in den Kursen zu vermitteln:
+        <br>
+        <ul>
+          <li>das der Halter weiß was und wen er am anderen Ende der Leine hat.</li>
+          <li>das der Halter versteht was der Hund ihm mitteilen möchte.</li>
+          <li>das der Halter weiß, wie er seinen Hund in verschiedenen Situationen anspricht und beeinflusst.</li>
+          <li> das Mensch und Hund zu einem Team verschmelzen und sich und ihre Bedürfnisse wechselseitig verstehen.
+          </li>
+        </ul>
+        </p>
+      </div>
+
+      <br>
+
+      <div class="w3-card-4" style="width:100%">
+        <header class="w3-container w3-light-grey w3-center w3-centered">
+          <h3>Dogs-Style ihr Hundefriseur</h3>
+        </header>
+        <div class="w3-container">
+          <img src="./dogs_wellness_120.png" alt="dogs-style" class="w3-left w3-circle w3-margin-right"
+            style="width:60px">
+          <p>Liebe Kunden, ich stehe auch als Hundefriseur für Sie zur Verfügung.<br><br>
+            Termine können Sie unter den hier in Kontakt hinterlegten Telefonnummern, mit mir vereinbaren, oder
+            besuchen Sie
+            unsere Friseur-Seite
+            Ich freue mich Sie und Ihren Liebling begrüßen zu dürfen.<br><br>
+            <i>Ich nehme noch neue Kunden an.</i>
+          </p><br>
+        </div>
+        <a href="http://www.dogs-style.net/" class="w3-button w3-block w3-dark-grey">www.dogs-style.net</a>
+      </div>
+
+      <!-- end about Section -->
+    </div>
+
+    <!-- Offer Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="offer">
+      <h2 class="w3-padding-16">Kursangebote</h2>
+      <p class="w3-wide">Welpengruppe</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey" style="width:100%">
+          Erlerntes Sozialverhalten anderen Hunden und Menschen gegenüber schafft wichtige Grundlagen für eine tolle
+          Partnerschaft zum Menschen und angenehmes Verhalten anderen Hunden gegenüber.
+          <br>
+          Die Welpen lernen den richtigen Umgang miteinander. Erste Übungen fließen hier bereits mit ein.
+          <br>
+          Spielerisch werden “Sitz”, “Platz” und das “Komm” geübt.
+          <br>
+          Die Bindung zum Menschen wird aufgebaut, gefestigt und gefördert. Nur ein Hund der eine gute Bindung zu
+          seinem
+          Besitzer hat, ist motiviert und angstfreier sich den täglichen Anforderungen zu stellen.
+        </div>
+      </div>
+      <p class="w3-wide">Junghunde</p>
+      <div class="w3-light-grey">
+        <div class="w3-container  w3-padding-small w3-dark-grey" style="width:100%">
+          Erlerntes wird jetzt gefestigt und verbessert.
+          <br>
+          Leinenführigkeit und das befolgen der wichtigsten Signale. Das wird nicht nur auf dem Hundeplatz geübt,
+          sondern auch auf der Strasse und in verschiedenen Alltagssituationen.
+          <br>
+          Mein persönliches Ziel ist es, dass Sie soviel Erfahrung und Wissen haben das Sie ihren Hund “lesen” und bei
+          Bedarf reagieren bzw. agieren können.
+        </div>
+      </div>
+      <p class="w3-wide"> Erziehungsgruppe/Erwachsene Hunde</p>
+      <div class="w3-light-grey">
+        <div class="w3-container  w3-padding-small w3-dark-grey" style="width:100%">
+          Geübt werden hier:
+          <br>
+          Grundsignale mit leichter, mittlerer bis starker Ablenkung.
+          <br>
+          Freifolge bei Fuß (ohne Leine).
+          <br>
+          Signale aus größerer Entfernung.
+          <br>
+          Wir trainieren auch außerhalb des Hundeplatzes.
+          <br>
+          Die inhaltliche Gestaltung des Kurses wird auf die Bedürfnisse der Kursteilnehmer abgestimmt.
+        </div>
+      </div>
+      <p class="w3-wide">Fährten und Nasenarbeit, Apportieren</p>
+      <div class="w3-light-grey">
+        <div class="w3-container  w3-padding-small w3-dark-grey" style="width:100%">
+          Eine anspruchsvolle aber ideale Auslastung für alle Hunde die begeisterte Spürnasen sind oder werden wollen.
+          <br>
+          Es ermöglicht dem Hund seine Instinkte und natürliche Fähigkeiten, in einem vom Halter gewünschten und
+          akzeptierten Rahmen, auszuleben.
+          <br>
+          Das Ergebnis sind ausgeglichene, zufriedene Hunde in einem Mensch-Hund-Team.
+        </div>
+      </div>
+      <p class="w3-wide">Clickern</p>
+      <div class="w3-light-grey">
+        <div class="w3-container  w3-padding-small w3-dark-grey" style="width:100%">
+          Clickern ist einfach zu erlernen und eine hocheffektive Ausbildungsmethode bei der nur mit positiver
+          Verstärkung gearbeitet wird. Es eignet sich für die Grunderziehung genauso wie für Kunststückchen.
+          <br>
+          Man kann sich dem Hund verständlich machen, ohne Ängste zu wecken.
+          <br>
+          Bei diesem Training lernt der Hund zu lernen. Er wird vom Befehlsempfänger zum aktiven Partner.
+        </div>
+      </div>
+      <p class="w3-wide">Agility</p>
+      <div class="w3-light-grey">
+        <div class="w3-container  w3-padding-small w3-dark-grey" style="width:100%">
+          Ein rasanter Sport bei dem es um Geschicklichkeit und blitzschnelle Reaktionen geht. Ziel ist es einen
+          Parcour
+          mit 12-20 Hindernissen fehlerfrei in kurzer Zeit zu absolvieren.
+          <br>
+          Agility ist ein ideales Fitnesstraining für Hund und Halter bei dem auch die mentalen Fähigkeiten gefordert
+          und trainiert werden.
+        </div>
+      </div>
+      <p class="w3-wide">
+        Rally Obedience</p>
+      <div class="w3-light-grey">
+        <div class="w3-container  w3-padding-small w3-dark-grey" style="width:100%">
+          Man nehme eine ordentliche Prise Unterordnung und Obedience, würze sie mit einem Schuss Agility - und heraus
+          kommt: Rally Obedience!<br>
+          So ähnlich war es wohl, denn man zog als Vergleich die Sportart Agility heran, die
+          sich eh und je größter Beliebtheit erfreute.
+          <br>Was macht Agility so beliebt? Was schätzen Teilnehmer und
+          Zuschauer so sehr daran? Nun, wahrscheinlich in erster Linie Action und Geschwindigkeit. Die Teams
+          absolvieren
+          dabei alle Hindernisse in einem rasanten Lauf, ununterbrochen von Anweisungen des Richters.
+          <br>Während des
+          gesamten Laufes ist eine intensive Kommunikation zwischen Hund und Mensch erforderlich und erlaubt: Der
+          Mensch
+          darf mit dem Hund reden, ihn anfeuern und ihm beliebig viele Hör- und Sichtzeichen geben.<br>
+          Unterschiedliche
+          Parcours anstelle des in der klassischen Unterordnung üblichen starren Laufschemas fordern auch den
+          Menschen:
+          Er ist gefragt, eine Strategie zu entwickeln, den Hund möglichst schnell durch den Parcours zu führen.
+          <br><br>
+          Wie also Elemente dieses Erfolgskonzeptes in die Unterordnung einfließen lassen? Des Rätsels Lösung lag nah:
+          Statt Hindernissen mussten Schilder in den Parcours, die die einzelnen Übungen der Unterordnung
+          symbolisieren
+          und vom Hund-Mensch-Team absolviert werden müssen.<br>Und so wurde Rally Obedience geboren!
+        </div>
+      </div>
+      <p class="w3-wide">Hunde mit auffälligem Verhalten</p>
+      <div class="w3-light-grey">
+        <div class="w3-container  w3-padding-small w3-dark-grey" style="width:100%">
+          Ein Hund der starke Verhaltensauffälligkeiten zeigt wie z.B. Aggressionen, übermäßige Angst. Ein Hund der
+          immer wieder außer Kontrolle gerät. Mit solchen Hunden in der Gruppe zu arbeiten bringt in aller Regel
+          nichts.
+          Sinnvoller ist es eine Analyse vorzunehmen, das Problem zu erkennen und daran zu arbeiten. Der Hund wird zu
+          Hause und in Alltagssituationen beobachtet, dann folgt ein Beratungsgespräch und die Erstellung eines
+          Trainingsplanes und die regelmäßige Kontrolle.
+        </div>
+      </div>
+      <p class="w3-wide">Spiel & Tobestunde</p>
+      <div class="w3-light-grey">
+        <div class="w3-container  w3-padding-small w3-dark-grey" style="width:100%">
+          Auf mehrfachen Wunsch und diverser Anfragen biete ich diese Stunde für Hunde an, die selten oder nie die
+          Möglichkeit haben frei zu laufen und zu spielen.
+          <br>
+          <b>Voraussetzung:</b>
+          Gut sozialisiert, kein Aggressionsproblem und nicht läufig.
+          <br>
+          Wenn Sie Interesse haben melden Sie sich bitte bei mir an damit die Gruppe nicht zu groß wird. Des weiteren
+          würde ich die Hunde vorher gerne kennenlernen.
+        </div>
+      </div>
+      <!-- end offer section-->
+    </div>
+
+    <!-- times Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="times">
+      <h2>Kurs- und Trainingszeiten</h2>
+      <p>Sollten Sie an einem der angebotenen Kurse Interesse haben, bitte ich Sie um telefonische Absprache, damit
+        die Gruppen nicht zu groß werden.</p>
+      <hr class="w3-opacity">
+      <table class="w3-table w3-striped w3-bordered w3-hoverable w3-responsive">
+        <thead>
+          <tr class="w3-light-grey w3-center">
+            <th class="w3-center">Zeit</th>
+            <th class="w3-center">Montag</th>
+            <th class="w3-center">Dienstag</th>
+            <th class="w3-center">Mittwoch</th>
+            <th class="w3-center">Donnerstag</th>
+            <th class="w3-center">Freitag</th>
+            <th class="w3-center">Samstag</th>
+            <th class="w3-center">Sonntag</th>
+          </tr>
+        </thead>
+        <tr>
+          <td class="w3-center"><b>10:00</b></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Rally Obedience</td>
+          <td>Welpen</td>
+        </tr>
+        <tr>
+          <td class="w3-center"><b>11:00</b></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Junghunde<br>kleine Rassen</td>
+          <td>Welpen</td>
+        </tr>
+        <tr>
+          <td class="w3-center"><b>12:00</b></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="w3-center"><b>16:00</b></td>
+          <td></td>
+          <td></td>
+          <td>Agility</td>
+          <td>Junghunde</td>
+          <td>Junghunde</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="w3-center"><b>17:00</b></td>
+          <td>Rally Obedience<br>S. Umbach</td>
+          <td></td>
+          <td>Spielstunde<br>große Rassen</td>
+          <td>Spielstunde<br>kleine Rassen</td>
+          <td>Junghunde</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <p class="w3-large w3-center">Kurszeiten können wetterbedingt verschoben werden.</p>
+      <!-- end times section-->
+    </div>
+
+
+    <!-- prices Section -->
+    <div class="w3-content w3-text-grey w3-padding-32" id="prices">
+      <h2>Preise</h2>
+      <hr class="w3-opacity">
+      <table class="w3-table w3-striped w3-bordered w3-hoverable w3-responsive">
+        <thead>
+          <tr class="w3-light-grey">
+            <th>Kurs</th>
+            <th>Art</th>
+            <th>Preis</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Erziehungskurse<br>(Welpen, Junghunde und erwachsene Hunde)</td>
+          <td>Monatskarte<br>10 er Karte</td>
+          <td>60 €<br>140 € </td>
+        </tr>
+        <tr>
+          <td>Agility </td>
+          <td>Monatskarte<br>10 er Karte</td>
+          <td>45 €<br>110 € </td>
+        </tr>
+        <tr>
+          <td>Spielstunde/Tobestunde</td>
+          <td>Monatskarte<br>10 er Karte</td>
+          <td>28 €<br>70 € </td>
+        </tr>
+        <tr>
+          <td>Einzeltraining</td>
+          <td>1 Stunde auf dem Hundeplatz<br>1 Stunde bei Ihnen</td>
+          <td>35 €<br>80 € </td>
+        </tr>
+      </table>
+      <h5> Anmerkungen</h5>
+      <ul>
+        <li>Schnupperstunden sind bei Kursbeginn zu entrichten und kosten 15 €</li>
+        <li>10er Karten sind 12 Wochen gültig</li>
+        <li>Monatskarten müssen vor dem 1. eines Monats bezahlt werden</li>
+      </ul>
+      <!-- end times section-->
+    </div>
+
+    <!-- ref Section -->
+    <div class="w3-padding-32 w3-content w3-text-grey" id="ref">
+      <h2>Referenzen</h2>
+      <hr class="w3-opacity">
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half">
+          <ul>
+            <li>Abgeschlossene Hundetrainerausbildung im Ausbildungszentrum OWL</li>
+            <li>Erlaubnis nach §11 TierSchG</li>
+            <li>Februar 2008 Seminar bei Sabine Winkler und Beate Poeting:<br>
+              “Problemhund oder Hundeproblem”</li>
+            <li>Ethologie von Wolf und Hund<br>- PD Gansloser</li>
+            <li>Physische und psychische Entwicklung des Hundes<br>- Dr. J. Hirschfeld</li>
+            <li>Aggressionsverhalten beim Hund<br>- Thomas Baumann</li>
+            <li>Rassekunde<br>- Eva-Maria Krämer</li>
+            <li>Körpersprache und Kommunikation<br>- Dr. J. Hirschfeld</li>
+            <li>Anatomie, Physiologie, Pathologie und Erste Hilfe<br>- Dr. J. Hirschfeld</li>
+            <li>Fährtenarbeit, Apportieren, Arbeit mit Hilfsmitteln<br>- Eva Plöger</li>
+            <li>Artgerechte Ernährung<br>- Sandra Wache</li>
+            <li>Aufbau und Organisation einer Hundeschule<br>- Sandra Wache</li>
+            <li>Der Hund im Recht<br>- Wolfgang Becher</li>
+            <li>Trickdog Seminar<br>- Manuela Zaitz</li>
+            <li>Teilnahme am Seminar Longiertraining</li>
+            <li>Praktika an verschiedenen Hundeschulen</li>
+            <li>Das Kleingedruckte in der Körpersprache<br>- Ute Blaschke-Berthold</li>
+          </ul>
+        </div>
+        <div class="w3-half">
+          <img class="w3-round" src="./a_owl.jpg" style="width:100%">
+        </div>
+      </div>
+      <!-- End ref Section -->
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-32 w3-content w3-text-grey" id="contact">
+      <h2>Kontakt</h2>
+      <hr class="w3-opacity">
+
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Hundeplatz in 34246 Vellmar, Kämper Brücke
+        </p>
+        <p><i class="fa fa-mobile fa-fw w3-xxlarge w3-margin-right"></i><a href="tel:01735136415">0173/5136415</a></p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i><a href="tel:056739929725">05673/9929725</a> </p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i><a
+            href="mailto:mail@hundeschule-dogs.de">mail@hundeschule-dogs.de</a></p>
+        <p><i class="fa fa-facebook-official fa-fw w3-xxlarge w3-margin-right"> </i><a
+            href="https://www.facebook.com/HundeschuleDogs">Hundeschule-Dog's bei Facebook</a></p>
+        <p><i class="fa fa-globe fa-fw w3-xxlarge w3-margin-right"> </i><a href="http://www.dogs-style.net/">Liebe
+            Kunden, ich stehe auch als <b>HUNDEFRISEUR</b> für Sie zur Verfügung -
+            www.dogs-style.net </a></p>
+      </div>
+      <!-- End Contact Section -->
+    </div>
+
+    <!-- journey Section -->
+    <div class="w3-padding-32 w3-content w3-text-grey" id="journey">
+      <h2>Anfahrt</h2>
+      <hr class="w3-opacity">
+      <!-- Image of location/map -->
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half">
+          <img src="./Anfahrt_gross.jpg" class="w3-image w3-greyscale" style="width:100%">
+        </div>
+
+        <div class="w3-half">
+          <img src="./anfahrt-kaemperbruecke.jpg" class="w3-image w3-greyscale" style="width:100%">
+        </div>
+      </div>
+      <div>
+        <button onclick="openAcc('Kassel')" class="w3-btn w3-block w3-left-align">Beschreibung von Kassel-Harleshausen
+          kommend
+          &#9660;</button>
+        <div id="Kassel" class="w3-container w3-hide">
+          <p>
+            In der Ortsmitte von Harleshausen von der Wolfhagerstraße in die Obervellmarerstr. Richtung Vellmar rechts
+            abbiegen. Von dort immer geradeaus durch Vellmar in Richtung Fuldatal-Ihringshausen.
+            Dann sieht man kurz vor der Firma "Zelte Göttig" auf der rechten Seite die Firma Küchen-Demme. Dort rechts
+            abbiegen Richtung Küchen-Demme, der Straße folgen und nach ca. 150 m auf der rechten Seite ist der Platz.
+            Direkt neben dem Schäferhundverein.
+          </p>
+        </div>
+        <button onclick="openAcc('Espenau')" class="w3-btn w3-block w3-left-align">Beschreibung von Espenau kommend
+          &#9660;</button>
+        <div id="Espenau" class="w3-container w3-hide">
+          <p>
+            Von der Heckershäuserstr. gerade auf die Frommershäuserstr. immer gerade aus Rtg. Fuldatal-Ihringshausen.
+            Dann sieht man kurz vor der Firma "Zelte Göttig" auf der rechten Seite die Firma Küchen-Demme. Dort rechts
+            abbiegen Richtung Küchen-Demme, der Straße folgen und nach ca. 150 m auf der rechten Seite ist der Platz.
+            Direkt neben dem Schäferhundverein.
+          </p>
+        </div>
+        <button onclick="openAcc('Ihringshausen')" class="w3-btn w3-block w3-left-align">Beschreibung von Ihringshausen
+          kommend
+          &#9660;</button>
+        <div id="Ihringshausen" class="w3-container w3-hide">
+          <p>
+            Auf der Niedervellmarsche Str. immer geradeaus Rtg. Vellmar-Stadt. An der Firma "Zelte-Göttig" vorbei und
+            die nächste links rein Richtung Küchen-Demme. Der Straße folgen und nach ca. 150 m auf der rechten Seite ist
+            der Platz. Direkt neben dem Schäferhundverein.
+          </p>
+        </div>
+        <button onclick="openAcc('Ahnatal')" class="w3-btn w3-block w3-left-align">Beschreibung von Ahnatal kommend
+          &#9660;</button>
+        <div id="Ahnatal" class="w3-container w3-hide">
+          <p>
+            Von der Heckershäuserstr. gerade auf die Frommershäuserstr. immer gerade aus Rtg. Fuldatal-Ihringshausen.
+            Weiter geradeaus, bei Küchen-Demme rechts. Der Straße folgen und nach ca. 150 m auf der rechten Seite ist
+            der Platz.
+            Direkt neben dem Schäferhundverein.
+          </p>
+        </div>
+        <!-- End journey Section -->
+      </div>
+
+      <!-- agb section-->
+      <div class="w3-padding-32 w3-content w3-text-grey" id="agb">
+        <h2> Allgemeine Geschäftsbedingungen Hundeschule Dogs</h2>
+        <hr class="w3-opacity">
+        <p>
+        <h6>1. Veranstalter</h6>
+        Veranstalter ist die Hundeschule Dogs Kämperbrücke
+
+        <h6>2. Leistungsbeschreibung</h6>
+        Welche Leistungen vereinbart sind, ergibt sich aus der Leistungsbeschreibung im Kursprogramm.
+
+        <h6>3 .Haftung</h6>
+        Die Teilnahme erfolgt auf eigene Verantwortung und in eigener Haftung des Kursteilnehmers. Die Hundeschule
+        haftet nicht für Schäden an Mensch oder Tier. Der/die Teilnehmer/in haftet für die von sich und/oder
+        seinem/ihren Hund verursachten Schäden.<br>
+        Der/die Teilnehmer/in verpflichtet sich auch, die Haftung im Schadensfall persönlich zu übernehmen, wenn ein
+        Dritter für ihn am Training teilnimmt. Es gilt als vereinbart, dass die Hundeschule keine Haftung für Personen-,
+        Sach- oder Vermögensschäden, die durch die Anwendung der gezeigten Übungen entstehen, sowie für Schäden durch
+        teilnehmende Hunde übernimmt und somit weder vom/von der Hundehalter/in noch von Dritten in Anspruch genommen
+        werden kann. Der/die Teilnehmer/in wird jegliche Begleitperson von dem Haftungsausschluss in Kenntnis setzen.
+
+        <h6>4. Benutzung des Trainingsplatzes</h6>
+        Die Benutzung des Trainingsplatzes ist nur zu den Trainingszeiten gestattet. Eltern bzw. Begleitpersonen von
+        Kindern haften für ihre Kinder. Das Betreten des Trainingsgeländes und der Zuwege erfolgt auf eigenes Risiko.
+        Das Übungsgelände ist stets sauber zu halten. Hundetüten für Kot sind mitzubringen.
+
+        <h6>5. Hundehaftpflichtversicherung</h6>
+        Der/die Teilnehmer/in versichert, dass für den teilnehmenden Hund eine gültige Haftpflichtversicherung besteht.
+
+        <h6>6. Impfschutz/Ansteckende Krankheiten/Läufigkeit</h6>
+        Der/die Teilnehmer/in versichert, dass sein Hund frei von ansteckenden Krankheiten ist und über einen
+        altersentsprechenden, aktuellen Impfschutz verfügt. Ist eine Hündin läufig, wird im Einzelfall entschieden, ob
+        sie am Unterricht teilnehmen kann.
+
+        <h6>7. Zahlung für Gruppenkurse, Einzelstunden</h6>
+
+        <ol>
+          <li><b>Gruppenunterricht/fortlaufende Kurse</b><br>
+            Der/die Kursteilnehmer/in zahlt die Gebühr für eine Kurskarte mit mehreren Stunden zum 1. ersten eines jeden
+            Monatsbeginn. Die Stunden müssen innerhalb von 8 Wochen nach Vertragsabschluss verbraucht werden. Die
+            Stunden
+            müssen innerhalb von 4 Wochen nach Vertragsabschluss verbraucht werden. Stunden, die nicht innerhalb von
+            dieser
+            Zeit in Anspruch genommen werden, verfallen und können weder auf andere Kurse übertragen noch zurück
+            erstattet
+            werden. Bei 10‘er Karten gilt die Frist von 12 Wochen.</li>
+
+          <li><b>Gruppenunterricht/geschlossene Kurse mit fester Stundenzahl</b><br>
+            Bei geschlossenen Kursen mit fester Stundenzahl zahlt der/die Teilnehmer/in einen Pauschalpreis für den
+            Kurs.
+            Versäumte Stunden können nicht nachgeholt werden und werden nicht rückvergütet. Die Kursgebühr ist zur
+            ersten
+            Kursstunde zu zahlen.</li>
+
+          <li><b>Einzelstunden</b><br>
+            Einzelstunden sind spätestens zum vereinbarten Termin der Einzelstunde zu zahlen.</li>
+        </ol>
+        <h6>8. Absage von Einzelstunden</h6>
+        Bei Absage von Einzelstunden später als 12 Stunden vor dem vereinbarten Termin werden 100% des Stundensatzes
+        fällig.
+
+        <h6>9. Absage von Kursen durch die Hundeschule</h6>
+        <ol>
+          <li>Die Hundeschule behält sich vor, fortlaufende Kurse oder Kurse mit festgelegter Stundenzahl bei zu
+            geringer
+            Teilnehmerzahl aus dem Programm zu nehmen.</li>
+
+          <li>Die Trainingseinheiten finden in der Regel bei jedem Wetter statt. Sollten die Witterungsbedingungen
+            unzumutbar sein, werden die Unterrichtsstunden abgesagt. Im Zweifelsfall empfiehlt es sich, kurzfristig
+            nachzufragen, da die Wetterbedingungen örtlich unterschiedlich sein können. In diesen Fällen werden die
+            Trainingseinheiten zu einem späteren Termin nachgeholt.</li>
+        </ol>
+        </p>
+      </div>
+      <!-- end agb section -->
+
+      <!-- Imressum Section -->
+      <div class="w3-padding-32 w3-content w3-text-grey" id="impressum">
+        <h2>Impressum</h2>
+        <hr class="w3-opacity">
+        <p>
+          Der Hundefriseur Dogs-Style ist in 34314 Hohenkirchen - Espenau, Im Ort 6, Landkreis Kassel <br>
+          Der Hundeplatz der Hundschule ist in 34246 Vellmar, Kämper Brücke <br><br>
+          USt-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: <br>
+          keine USt-Nummer vorhanden <br><br>
+          <a href="https://www.disclaimer.de/disclaimer.htm">Haftungsausschluss / Disclaimer</a>
+        </p>
+      </div>
+      <!-- End Impressum Section -->
+
+      <!-- Datenschutz Section -->
+      <div class="w3-padding-32 w3-content w3-text-grey" id="datenschutz" style="margin-bottom:64px">
+        <h2>Datenschutz</h2>
+        <hr class="w3-opacity">
+        <p>
+          //TODO: Je nach Hosting etc. (+ fontawesome, google fonts, w3.css)
+        </p>
+      </div>
+      <!-- End Datenschutz Section -->
+
+      <!-- Footer -->
+      <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+        <a href="https://www.facebook.com/HundeschuleDogs">
+          <div><i class="fa fa-facebook-official w3-hover-opacity"></i></div>
+        </a>
+
+        <!--TODO: Kann natürlich noch angepasst werden-->
+        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+            class="w3-hover-text-green">w3.css</a></p>
+        <!-- End footer -->
+      </footer>
+
+      <!-- END PAGE CONTENT -->
+    </div>
+
+    <script>
+      // Open and close sidebar
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "60%";
+        document.getElementById("mySidebar").style.display = "block";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+
+      function openAcc(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+
+</body>
+
+</html>
