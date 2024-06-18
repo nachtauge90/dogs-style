@@ -1,0 +1,8 @@
+#robots.txt für die Domain 54457498.swh.strato-hosting.eu
+#erzeugt am 19.01.2015
+ 
+User-agent: *
+Disallow: /assets
+Disallow: /cgi-bin
+Disallow: /cgi-data
+ 
