@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>dogs-style Hundefriseur</title>
+    <title>Dog's Style Hundefriseur</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -27,9 +27,8 @@
         .bgimg {
             background-position: center;
             background-repeat: no-repeat;
-            background-size: auto;
-            background-image: url('./resources/dogs_wellness_120.png');
-            /* //TODO: Bessere Auflösung vorhanden? Vielleicht auch neues Bild?*/
+            background-size: cover;
+            background-image: url('./resources/Logo_Dogs_Style.png');
             min-height: 100%;
         }
     </style>
@@ -37,15 +36,15 @@
         {
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
-            "name": "dogs-style Hundefriseur",
-            "description":"dogs-style - Ihr Hundefriseur in der Nähe (Fuldatal, Kassel, Espenau, Vellmar und Umgebung). Gönnen sie ihrem Hund eine Fellpflege! Das Wohl Ihres Hundes hat für mich oberste Priorität, selbstverständlich gehen ich aber auch auf Ihre Wünsche ein. Vereinbaren Sie einfach einen Termin.",
-            "logo":"http://www.dogs-style.net/resources/dogs_wellness_120",
+            "name": "Dog's Style Hundefriseur",
+            "description": "Dog's Style - Ihr Hundefriseur in der Nähe (Fuldatal, Kassel, Espenau, Vellmar und Umgebung). Gönnen sie ihrem Hund eine Fellpflege! Das Wohl Ihres Hundes hat für mich oberste Priorität, selbstverständlich gehen ich aber auch auf Ihre Wünsche ein. Vereinbaren Sie einfach einen Termin.",
+            "logo": "http://www.dogs-style.net/resources/Logo_Dogs_Style",
             "image": [
-                "http://www.dogs-style.net/resources/dogs_wellness_120",
+                "http://www.dogs-style.net/resources/Logo_Dogs_Style",
                 "http://www.dogs-style.net/resources/collie2.jpeg"
             ],
-            "slogan":"Gönnen sie ihrem Hund eine Fellpflege",
-            "location":{
+            "slogan": "Gönnen sie ihrem Hund eine Fellpflege",
+            "location": {
                 "@type": "PostalAddress",
                 "streetAddress": "Am Backhaus 11",
                 "addressLocality": "Fuldatal",
@@ -62,7 +61,7 @@
                 "addressCountry": "DE"
             },
             "priceRange": "€",
-            "keywords":"hundefriseur,friseur,hund,hunde,in der nähe,fuldatal,espenau,vellmar,kassel,hundesalon,schneiden und trimmen",
+            "keywords": "hundefriseur,friseur,hund,hunde,in der nähe,fuldatal,espenau,vellmar,kassel,hundesalon,schneiden und trimmen",
             "url": "http://www.dogs-style.net",
             "telephone": "+491735136415"
         }
@@ -108,12 +107,14 @@
 
         <!-- Header -->
         <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-            <h1 class="w3-jumbo"><b>dogs-style</b></h1>
+            <h1 class="w3-jumbo"><img src="./resources/Schrift_Dogs_Style.png" class="w3-image"></h1>
             <p class="w3-xlarge">Hundefriseur</p>
-            <img src="./resources/dogs_wellness_120.png" class="w3-image w3-hide-large w3-hide-small w3-round"
-                style="display:block;width:30%;margin:auto;">
-            <img src="./resources/dogs_wellness_120.png" class="w3-image w3-hide-large w3-hide-medium w3-round"
-                width="300" height="300">
+            
+            <img src="./resources/Logo_Dogs_Style.png" class="w3-image w3-hide-large w3-hide-small w3-round"
+            style="display:block;width:100%;margin:auto;">
+            <img src="./resources/Logo_Dogs_Style.png" class="w3-image w3-hide-large w3-hide-medium w3-round"
+            width="500" height="500">
+            
         </header>
 
         <!-- Portfolio Section -->
@@ -161,7 +162,7 @@
             </p>
             <h3 class="w3-padding-16">Leistungen</h3>
 
-            <p class="w3-wide ">Wachen & Föhnen</p>
+            <p class="w3-wide ">Waschen & Föhnen</p>
             <div class="w3-light-grey">
                 <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:100%">Das Fell wird mit
                     speziellen Shampoos gewaschen und anschließend komplett getrocknet</div>
